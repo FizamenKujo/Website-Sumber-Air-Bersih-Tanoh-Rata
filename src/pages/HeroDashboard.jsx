@@ -32,12 +32,20 @@ export default function HeroDashboard({ setActiveTab }) {
                         Sistem informasi geografis yang mendokumentasikan seluruh titik sumber air bersih, kondisi fisik, kualitas air, serta cakupan pelayanan bagi warga Gampong Tanoh Rata, Kecamatan Peureulak, Aceh Timur.
                     </p>
 
-                    <button
-                        onClick={() => setActiveTab('peta')}
-                        className="px-8 py-3 bg-[#0284C7] hover:bg-[#0369a1] text-white rounded-lg font-semibold shadow-md shadow-sky-200 transition-all hover:-translate-y-0.5 active:translate-y-0"
-                    >
-                        Lihat Peta GIS →
-                    </button>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <button
+                            onClick={() => setActiveTab('peta')}
+                            className="px-8 py-3 bg-[#0284C7] hover:bg-[#0369a1] text-white rounded-lg font-semibold shadow-md shadow-sky-200 transition-all hover:-translate-y-0.5 active:translate-y-0"
+                        >
+                            Lihat Peta GIS →
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('katalog')}
+                            className="px-8 py-3 bg-white text-[#0284C7] hover:bg-sky-50 border border-sky-100 rounded-lg font-semibold shadow-sm transition-all hover:-translate-y-0.5 active:translate-y-0"
+                        >
+                            Lihat Katalog Air
+                        </button>
+                    </div>
                 </div>
             </div>
 

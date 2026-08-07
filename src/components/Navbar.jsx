@@ -24,7 +24,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
                         <Droplet size={20} className="text-white md:w-6 md:h-6" />
                     </div>
                     <span className="font-bold text-lg md:text-xl tracking-tight hidden sm:block">Sistem Informasi Air Bersih Tanoh Rata</span>
-                    <span className="font-bold text-[15px] tracking-tight sm:hidden leading-snug">Sistem Info Air<br />Tanoh Rata</span>
+                    <span className="font-bold text-[14px] tracking-tight sm:hidden leading-snug">Sistem Informasi<br />Air Tanoh Rata</span>
                 </div>
 
                 {/* Desktop Navigation */}

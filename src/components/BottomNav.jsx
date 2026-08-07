@@ -5,7 +5,7 @@ export default function BottomNav({ activeTab, setActiveTab }) {
     const navItems = [
         { id: 'beranda', label: 'Beranda', icon: Home },
         { id: 'peta', label: 'Peta', icon: Map },
-        { id: 'katalog', label: 'Dusun', icon: Grid },
+        { id: 'katalog', label: 'Katalog Air', icon: Grid },
         { id: 'edukasi', label: 'Edukasi', icon: BookOpen },
         { id: 'tentang', label: 'Tentang', icon: Info }
     ];

@@ -14,17 +14,17 @@ export default function Navbar({ activeTab, setActiveTab }) {
         <nav className="bg-[#0284C7] text-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
 
-                <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActiveTab('beranda')}>
+                <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveTab('beranda')}>
                     <img
                         src="/logo-aceh-timur.png"
                         alt="Logo Aceh Timur"
-                        className="h-10 w-auto object-contain bg-white rounded-full p-1"
+                        className="h-8 md:h-10 w-auto object-contain bg-white rounded-full p-1"
                     />
-                    <div className="bg-white/20 p-2 rounded-full hidden sm:block">
-                        <Droplet size={24} className="text-white" />
+                    <div className="bg-white/20 p-1.5 md:p-2 rounded-full hidden sm:block">
+                        <Droplet size={20} className="text-white md:w-6 md:h-6" />
                     </div>
-                    <span className="font-bold text-xl tracking-tight hidden sm:block">Sistem Informasi Air Bersih Tanoh Rata</span>
-                    <span className="font-bold text-lg tracking-tight sm:hidden">Air Bersih T.R.</span>
+                    <span className="font-bold text-lg md:text-xl tracking-tight hidden sm:block">Sistem Informasi Air Bersih Tanoh Rata</span>
+                    <span className="font-bold text-[15px] tracking-tight sm:hidden leading-snug">Sistem Info Air<br />Tanoh Rata</span>
                 </div>
 
                 {/* Desktop Navigation */}

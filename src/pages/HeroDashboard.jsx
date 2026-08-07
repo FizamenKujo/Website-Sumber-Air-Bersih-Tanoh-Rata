@@ -23,7 +23,7 @@ export default function HeroDashboard({ setActiveTab }) {
                         [ Portal Resmi Gampong Tanoh Rata ]
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-800 leading-tight mb-6">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-slate-800 leading-tight mb-6 px-2">
                         Sistem Informasi & Pemetaan <br className="hidden md:block" />
                         <span className="text-[#0284C7]">Air Bersih</span> Gampong Tanoh Rata
                     </h1>

@@ -49,9 +49,8 @@ export default function AboutProject() {
                     <div className="mt-10 p-6 bg-sky-50 rounded-2xl border border-sky-100 text-sm md:text-base leading-relaxed text-slate-600">
                         <h4 className="font-bold text-sky-900 mb-3 text-lg">💡 Latar Belakang & Apresiasi</h4>
                         <p className="mb-3 text-justify">
-                            "Portal Peta Sumber Air Bersih" ini dibangun secara mandiri sebagai program kerja unggulan (Proker)
-                            mahasiswa <strong>Kuliah Kerja Nyata (KKN) Program Studi Informatika, Universitas Samudra</strong>
-                            angkatan tahun ini di Gampong Tanoh Rata, Kecamatan Peureulak, Aceh Timur.
+                            mahasiswa <strong>KKN Kelompok 20 Universitas Samudra Tahun 2026</strong>
+                            di Gampong Tanoh Rata, Kecamatan Peureulak, Aceh Timur.
                         </p>
                         <p className="text-justify">
                             Kami mengucapkan apresiasi dan terima kasih yang sebesarnya atas kolaborasi perangkat gampong, serta

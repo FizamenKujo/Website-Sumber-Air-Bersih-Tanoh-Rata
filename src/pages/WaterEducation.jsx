@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, AlertTriangle, Droplets } from 'lucide-react';
+import { CheckCircle2, AlertTriangle, Droplets, Eye, Wind, Droplet } from 'lucide-react';
 
 export default function WaterEducation() {
     return (
@@ -22,20 +22,26 @@ export default function WaterEducation() {
                     <p className="text-sky-100 text-sm">Menurut standar Kepmenkes RI, air sehat bisa dikenali dari fisiknya.</p>
                 </div>
                 <div className="p-6 md:p-8 grid md:grid-cols-3 gap-6 text-center">
-                    <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <div className="text-4xl mb-2">👁️</div>
-                        <h4 className="font-bold text-slate-800 mb-2">Tidak Berwarna</h4>
-                        <p className="text-sm text-slate-500">Air harus jernih, tidak keruh, dan tidak meninggalkan noda kecoklatan/pudar.</p>
+                    <div className="p-5 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+                        <div className="w-14 h-14 bg-sky-100 text-[#0284C7] rounded-full flex items-center justify-center mb-4">
+                            <Eye size={28} />
+                        </div>
+                        <h4 className="font-bold text-slate-800 mb-2">Jernih & Tidak Berwarna</h4>
+                        <p className="text-sm text-slate-500">Air harus jernih, tidak keruh, dan tidak meninggalkan noda kecoklatan atau pudar.</p>
                     </div>
-                    <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <div className="text-4xl mb-2">👃</div>
-                        <h4 className="font-bold text-slate-800 mb-2">Tidak Berbau</h4>
-                        <p className="text-sm text-slate-500">Air sehat sama sekali tidak mengeluarkan aroma amis, besi, maupun belerang.</p>
+                    <div className="p-5 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+                        <div className="w-14 h-14 bg-sky-100 text-[#0284C7] rounded-full flex items-center justify-center mb-4">
+                            <Wind size={28} />
+                        </div>
+                        <h4 className="font-bold text-slate-800 mb-2">Bebas Bau</h4>
+                        <p className="text-sm text-slate-500">Air sehat sama sekali tidak bebas dari aroma amis, besi, maupun bau belerang.</p>
                     </div>
-                    <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <div className="text-4xl mb-2">👅</div>
+                    <div className="p-5 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+                        <div className="w-14 h-14 bg-sky-100 text-[#0284C7] rounded-full flex items-center justify-center mb-4">
+                            <Droplet size={28} />
+                        </div>
                         <h4 className="font-bold text-slate-800 mb-2">Tidak Berasa</h4>
-                        <p className="text-sm text-slate-500">Saat diminum (setelah direbus) air harus tawar, bebas dari rasa payau/asam.</p>
+                        <p className="text-sm text-slate-500">Saat diminum (setelah direbus) air harus tawar, bebas dari rasa payau atau asam.</p>
                     </div>
                 </div>
             </div>

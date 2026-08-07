@@ -159,36 +159,7 @@ export default function WaterDetail({ loc, setActiveTab }) {
                         </ul>
                     </div>
 
-                    {/* Riwayat Pemeliharaan */}
-                    <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                        <h3 className="text-xl font-serif font-bold text-slate-900 mb-5 flex items-center gap-2">
-                            <Wrench className="text-[#0284C7]" /> Riwayat Pemeliharaan
-                        </h3>
 
-                        <div className="relative border-l-2 border-slate-100 ml-3 space-y-6 pb-2">
-
-                            {loc.riwayat && loc.riwayat.map((r, i) => (
-                                <div key={i} className="relative pl-5">
-                                    <div className={`absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full ${i === 0 ? 'bg-[#0284C7] ring-4 ring-sky-50' : 'bg-slate-300'}`}></div>
-                                    <div className="text-xs font-bold text-[#0284C7] mb-1">{r.tanggal}</div>
-                                    <h4 className="font-bold text-slate-800 text-sm mb-0.5">{r.tindakan}</h4>
-                                    <p className="text-xs text-slate-500">{r.teknisi ? `Teknisi: ${r.teknisi}` : `Status: ${r.status}`}</p>
-                                </div>
-                            ))}
-
-                            {!loc.riwayat && (
-                                <div className="relative pl-5">
-                                    <div className="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-slate-300"></div>
-                                    <p className="text-xs text-slate-500 italic">Belum ada catatan riwayat pemeliharaan.</p>
-                                </div>
-                            )}
-
-                        </div>
-
-                        <button className="w-full mt-4 py-2 border border-[#0284C7] text-[#0284C7] font-semibold text-sm rounded-lg hover:bg-sky-50 hover:shadow-sm transition-all">
-                            Lihat Semua Riwayat
-                        </button>
-                    </div>
 
                 </div>
             </div>

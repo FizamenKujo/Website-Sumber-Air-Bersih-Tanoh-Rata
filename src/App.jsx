@@ -36,12 +36,15 @@ export default function App() {
 
             {/* Footer Desktop */}
             <footer className="hidden md:block bg-white/70 backdrop-blur border-t border-slate-200 mt-auto py-8">
-                <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
-                    <div>&copy; 2024 Gampong Tanoh Rata. KKN Tematik Sumber Daya Air.</div>
-                    <div className="flex gap-6 mt-4 md:mt-0 font-medium text-slate-500">
-                        <span className="hover:text-slate-800 cursor-pointer transition">Kebijakan Privasi</span>
-                        <span className="hover:text-slate-800 cursor-pointer transition">Syarat Layanan</span>
-                        <span className="hover:text-slate-800 cursor-pointer transition">Kontak Admin</span>
+                <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center text-slate-500 text-sm gap-6">
+                    <div className="space-y-1">
+                        <div className="font-semibold text-slate-700">&copy; 2026 Pemerintah Gampong Tanoh Rata</div>
+                        <div>KKN Kelompok 20 Universitas Samudra 2026</div>
+                    </div>
+                    <div className="flex flex-col md:text-right space-y-1">
+                        <span className="font-semibold text-slate-700">Kantor Gampong</span>
+                        <span className="text-slate-600">Jl. Kantor Keuchik Gampong Tanoh Rata, Peureulak, Aceh Timur</span>
+                        <span className="text-[#0284C7]">Email: kantorgampongtanohrata@gmail.com</span>
                     </div>
                 </div>
             </footer>

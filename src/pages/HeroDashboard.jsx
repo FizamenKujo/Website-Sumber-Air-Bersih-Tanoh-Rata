@@ -29,8 +29,7 @@ export default function HeroDashboard({ setActiveTab }) {
                     </h1>
 
                     <p className="text-slate-500 max-w-2xl mx-auto md:text-lg mb-10 leading-relaxed">
-                        Informasi terkini mengenai ketersediaan, titik lokasi sumur bor, tandon air bantuan POLRI
-                        & Kemensos, serta kualitas air di wilayah kami.
+                        Sistem informasi geografis yang mendokumentasikan seluruh titik sumber air bersih, kondisi fisik, kualitas air, serta cakupan pelayanan bagi warga Gampong Tanoh Rata, Kecamatan Peureulak, Aceh Timur.
                     </p>
 
                     <button

@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "nama": "Sumur Bor Dusun Meunasah",
+        "sumber": "POLRI",
+        "dusun": "Dusun Meunasah",
+        "lat": 4.8821,
+        "lng": 97.7712,
+        "foto": "https://images.unsplash.com/photo-1541888042459-d8e15db2a5bc?auto=format&fit=crop&q=80&w=600",
+        "deskripsi": "Sumur bor utama yang melayani Dusun Meunasah. Dibangun pada tahun 2021 melalui program dana kepolisian tingkat daerah, fasilitas ini telah dilengkapi dengan sistem filtrasi bertahap untuk memastikan kualitas air sesuai standar kesehatan. Saat ini melayani sekitar 150 Kepala Keluarga (KK) dengan aliran yang stabil sepanjang tahun.",
+        "status": "aktif",
+        "labelStatus": "Beroperasi",
+        "catatan": "Air jernih dan mengalir lancar.",
+        "kapasitas": "5000 Liter",
+        "spesifikasi": {
+            "kedalaman": "85 Meter",
+            "debit": "4.5 Liter/Detik",
+            "pompa": "Submersible 2HP"
+        },
+        "kualitas": {
+            "kejernihan": "Jernih (Sesuai Standar)",
+            "ph": "7.2 (Netral)"
+        },
+        "riwayat": [
+            {
+                "tanggal": "12 Okt 2024",
+                "tindakan": "Pembersihan Filter Rutin",
+                "teknisi": "Bpk. Ridwan",
+                "status": "Normal"
+            },
+            {
+                "tanggal": "05 Sep 2024",
+                "tindakan": "Pengecekan Pompa Air",
+                "teknisi": "Tim Desa",
+                "status": "Normal"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nama": "Tandon Utama Dewantara",
+        "sumber": "Kemensos",
+        "dusun": "Dusun Dewantara",
+        "lat": 4.8835,
+        "lng": 97.7725,
+        "foto": "https://images.unsplash.com/photo-1594916896280-49b809a56e29?auto=format&fit=crop&q=80&w=600",
+        "deskripsi": "Fasilitas penampungan air bersih komunal yang dibangun oleh Kementerian Sosial RI. Sumber air disalurkan dari pipa bawah tanah menuju tandon utama untuk mempermudah akses warga saat musim kemarau.",
+        "status": "aktif",
+        "labelStatus": "Beroperasi",
+        "catatan": "Beroperasi normal.",
+        "kapasitas": "8000 Liter",
+        "spesifikasi": {
+            "kedalaman": "Pipa Transmisi",
+            "debit": "10 Liter/Detik",
+            "pompa": "Submersible 3HP"
+        },
+        "kualitas": {
+            "kejernihan": "Jernih",
+            "ph": "7.0 (Netral)"
+        },
+        "riwayat": [
+            {
+                "tanggal": "24 Nov 2024",
+                "tindakan": "Pengurasan Tandon Berkala",
+                "teknisi": "Kader Desa",
+                "status": "Selesai"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nama": "Proyek Sumur Keumeuning",
+        "sumber": "Kemensos",
+        "dusun": "Dusun Keumeuning",
+        "lat": 4.8815,
+        "lng": 97.7750,
+        "foto": "https://images.unsplash.com/photo-1538448173943-41bb3db8ac08?auto=format&fit=crop&q=80&w=600",
+        "deskripsi": "Sumur bor generasi baru yang saat ini sedang dalam penyelesaian tahap akhir (instalasi kelistrikan & pompa). Diharapkan rampung untuk memenuhi target air bersih RT 03 dan RT 04.",
+        "status": "pending",
+        "labelStatus": "Belum Aktif / Pending",
+        "catatan": "Tahap penyelesaian instalasi listrik dan sambungan pipa.",
+        "kapasitas": "3000 Liter",
+        "spesifikasi": {
+            "kedalaman": "120 Meter",
+            "debit": "Menunggu Pengujian",
+            "pompa": "Jetpump Semi-Submersible"
+        },
+        "kualitas": {
+            "kejernihan": "Pengecekan Rutin (Tahap 1)",
+            "ph": "Pengujian Lab (Proses)"
+        },
+        "riwayat": [
+            {
+                "tanggal": "10 Des 2024",
+                "tindakan": "Pemasangan Pipa Casing",
+                "teknisi": "Kontraktor DPU",
+                "status": "Berjalan"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nama": "Instalasi Mandiri Blang Senebok",
+        "sumber": "Dana Desa",
+        "dusun": "Dusun Blang Senebok",
+        "lat": 4.8855,
+        "lng": 97.7705,
+        "foto": "https://images.unsplash.com/photo-1527668752968-14ce70a367c3?auto=format&fit=crop&q=80&w=600",
+        "deskripsi": "Instalasi swadaya dari warga dan Dana Desa yang menyuplai titik paling utara gampong. Dilengkapi penampungan fiber khusus yang tahan sinar UV dan sistem filtrasi bio-sponge alami.",
+        "status": "aktif",
+        "labelStatus": "Beroperasi",
+        "catatan": "Melayani 80 KK.",
+        "kapasitas": "2000 Liter",
+        "spesifikasi": {
+            "kedalaman": "65 Meter",
+            "debit": "3.5 Liter/Detik",
+            "pompa": "Submersible 1.5HP"
+        },
+        "kualitas": {
+            "kejernihan": "Sangat Jernih",
+            "ph": "7.3 (Sangat Baik)"
+        },
+        "riwayat": [
+            {
+                "tanggal": "01 Jan 2025",
+                "tindakan": "Ganti Filter Bio-Sponge",
+                "teknisi": "Warga Swadaya",
+                "status": "Sukses"
+            }
+        ]
+    }
+]

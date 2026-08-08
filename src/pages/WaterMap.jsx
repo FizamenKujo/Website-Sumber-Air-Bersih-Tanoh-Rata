@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, GeoJSON } from 'react-leaflet';
 import { Navigation, MapPin } from 'lucide-react';
 import L from 'leaflet';
 import waterSources from '../data/waterSources.json';
+import tanohRataBoundary from '../data/tanohRataBoundary.json';
 
 const polriIcon = L.divIcon({
     className: 'custom-pin',
@@ -42,7 +43,7 @@ export default function WaterMap({ openDetail }) {
     const filteredData = useMemo(() => {
         if (filter === 'Semua') return waterSources;
         if (filter === 'POLRI') return waterSources.filter(s => s.sumber === 'POLRI');
-        if (filter === 'Kemensos') return waterSources.filter(s => s.sumber === 'Kemensos');
+        if (filter === 'Kemensos Daerah') return waterSources.filter(s => s.sumber === 'Kemensos Daerah');
         if (filter === 'Aktif') return waterSources.filter(s => s.status === 'aktif');
         if (filter === 'Pending') return waterSources.filter(s => s.status === 'pending');
         return waterSources;
@@ -71,16 +72,16 @@ export default function WaterMap({ openDetail }) {
 
             {/* Filters */}
             <div className="flex gap-2 overflow-x-auto pb-2 mb-4 scrollbar-hide">
-                {['Semua', 'POLRI', 'Kemensos', 'Aktif', 'Pending'].map(f => (
+                {['Semua', 'POLRI', 'Kemensos Daerah', 'Aktif', 'Pending'].map(f => (
                     <button
                         key={f}
                         onClick={() => setFilter(f)}
                         className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${filter === f
-                                ? 'bg-[#0284C7] text-white shadow-md'
-                                : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
+                            ? 'bg-[#0284C7] text-white shadow-md'
+                            : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
                             }`}
                     >
-                        {f === 'POLRI' ? 'Bantuan POLRI' : f === 'Kemensos' ? 'Bantuan Kemensos' : f === 'Aktif' ? 'Siap Pakai' : f === 'Pending' ? 'Belum Aktif' : f}
+                        {f === 'POLRI' ? 'Bantuan POLRI' : f === 'Kemensos Daerah' ? 'Bantuan Kemensos Daerah' : f === 'Aktif' ? 'Siap Pakai' : f === 'Pending' ? 'Belum Aktif' : f}
                     </button>
                 ))}
             </div>
@@ -91,6 +92,18 @@ export default function WaterMap({ openDetail }) {
                         attribution='&copy; OpenStreetMap'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
+
+                    {tanohRataBoundary && (
+                        <GeoJSON
+                            data={tanohRataBoundary}
+                            style={{
+                                color: '#0284C7',
+                                weight: 2,
+                                fillColor: '#0284C7',
+                                fillOpacity: 0.15
+                            }}
+                        />
+                    )}
 
                     {userLoc && (
                         <Marker position={userLoc} icon={userLocIcon}>

@@ -1,0 +1,20 @@
+{
+    "type": "FeatureCollection",
+    "name": "Batas Tanoh Rata",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": null
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    97.8531153,
+                    4.809342,
+                    0.0
+                ]
+            }
+        }
+    ]
+}

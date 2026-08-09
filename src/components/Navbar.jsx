@@ -13,18 +13,18 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
     return (
         <nav className="bg-[#0284C7] text-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
+            <div className="w-full mx-auto px-4 lg:px-12 min-h-[4rem] py-3 flex items-center justify-between gap-4">
 
-                <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveTab('beranda')}>
+                <div className="flex items-center gap-2 sm:gap-3 cursor-pointer" onClick={() => setActiveTab('beranda')}>
                     <img
                         src="/logo-aceh-timur.png"
                         alt="Logo Aceh Timur"
-                        className="h-8 md:h-10 w-auto object-contain bg-white rounded-full p-1"
+                        className="h-10 md:h-11 w-auto object-contain bg-white rounded-full p-1 shrink-0"
                     />
-                    <div className="bg-white/20 p-1.5 md:p-2 rounded-full hidden sm:block">
+                    <div className="bg-white/20 p-1.5 md:p-2 rounded-full hidden sm:block shrink-0">
                         <Droplet size={20} className="text-white md:w-6 md:h-6" />
                     </div>
-                    <span className="font-bold text-[11px] sm:text-sm md:text-base lg:text-lg tracking-tight leading-snug max-w-[220px] sm:max-w-none">
+                    <span className="font-bold text-[13px] sm:text-base md:text-lg tracking-tight leading-snug break-words">
                         SIPAIR - Sistem Informasi Air Bersih Gampong Tanoh Rata
                     </span>
                 </div>

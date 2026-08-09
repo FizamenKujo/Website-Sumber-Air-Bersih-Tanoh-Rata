@@ -41,7 +41,6 @@ export default function App() {
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center text-slate-500 text-sm gap-6">
                     <div className="space-y-1">
                         <div className="font-semibold text-slate-700">&copy; 2026 Pemerintahan Gampong Tanoh Rata</div>
-                        <div>Inisiatif KKN Kelompok 20 Universitas Samudra 2026</div>
                     </div>
                     <div className="flex flex-col md:text-right space-y-1">
                         <span className="font-semibold text-slate-700">Kantor Gampong Tanoh Rata</span>

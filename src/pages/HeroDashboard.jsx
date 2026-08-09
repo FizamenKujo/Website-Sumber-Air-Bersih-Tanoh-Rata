@@ -37,7 +37,7 @@ export default function HeroDashboard({ setActiveTab }) {
                             onClick={() => setActiveTab('peta')}
                             className="px-8 py-3 bg-[#0284C7] hover:bg-[#0369a1] text-white rounded-lg font-semibold shadow-md shadow-sky-200 transition-all hover:-translate-y-0.5 active:translate-y-0"
                         >
-                            Lihat Peta GIS →
+                            Lihat Peta →
                         </button>
                         <button
                             onClick={() => setActiveTab('katalog')}

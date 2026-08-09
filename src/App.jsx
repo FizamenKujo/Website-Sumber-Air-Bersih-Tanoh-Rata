@@ -36,17 +36,17 @@ export default function App() {
                 )}
             </main>
 
-            {/* Footer Desktop */}
-            <footer className="hidden md:block bg-white/70 backdrop-blur border-t border-slate-200 mt-auto py-8">
+            {/* Footer */}
+            <footer className="bg-white/70 backdrop-blur border-t border-slate-200 mt-auto py-8 mb-16 md:mb-0">
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center text-slate-500 text-sm gap-6">
                     <div className="space-y-1">
-                        <div className="font-semibold text-slate-700">&copy; 2026 Pemerintah Gampong Tanoh Rata</div>
-                        <div>KKN Kelompok 20 Universitas Samudra 2026</div>
+                        <div className="font-semibold text-slate-700">&copy; 2026 Pemerintahan Gampong Tanoh Rata</div>
+                        <div>Inisiatif KKN Kelompok 20 Universitas Samudra 2026</div>
                     </div>
                     <div className="flex flex-col md:text-right space-y-1">
-                        <span className="font-semibold text-slate-700">Kantor Gampong</span>
+                        <span className="font-semibold text-slate-700">Kantor Gampong Tanoh Rata</span>
                         <span className="text-slate-600">JL. Monisa Km. 05 kode pos 24453</span>
-                        <span className="text-[#0284C7]">Email: kantorgampongtanohrata@gmail.com</span>
+                        <span className="text-[#0284C7]">Email: gampongtanohrata@gmail.com</span>
                     </div>
                 </div>
             </footer>

@@ -4,7 +4,7 @@ import { Droplet } from 'lucide-react';
 export default function Navbar({ activeTab, setActiveTab }) {
     const navItems = [
         { id: 'beranda', label: 'Beranda' },
-        { id: 'peta', label: 'Peta GIS' },
+        { id: 'peta', label: 'Peta' },
         { id: 'katalog', label: 'Katalog Air' },
         { id: 'edukasi', label: 'Edukasi & Info' },
         { id: 'sejarah', label: 'Sejarah' },
@@ -24,8 +24,9 @@ export default function Navbar({ activeTab, setActiveTab }) {
                     <div className="bg-white/20 p-1.5 md:p-2 rounded-full hidden sm:block">
                         <Droplet size={20} className="text-white md:w-6 md:h-6" />
                     </div>
-                    <span className="font-bold text-lg md:text-xl tracking-tight hidden sm:block">Sistem Informasi Air Bersih Tanoh Rata</span>
-                    <span className="font-bold text-[14px] tracking-tight sm:hidden leading-snug">Sistem Informasi<br />Air Tanoh Rata</span>
+                    <span className="font-bold text-base md:text-lg tracking-tight hidden lg:block">SIPAIR - Sistem Informasi Air Bersih Gampong Tanoh Rata</span>
+                    <span className="font-bold text-sm tracking-tight hidden sm:block lg:hidden">SIPAIR Tanoh Rata</span>
+                    <span className="font-bold text-[15px] tracking-tight sm:hidden leading-snug">SIPAIR <br />Tanoh Rata</span>
                 </div>
 
                 {/* Desktop Navigation */}

@@ -93,19 +93,6 @@ export default function WaterMap({ openDetail }) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
-                    {/* Batas Wilayah GeoJSON */}
-                    {tanohRataBoundary && (
-                        <GeoJSON
-                            data={tanohRataBoundary}
-                            style={{
-                                color: '#EF4444',      // Warna garis batas (Merah)
-                                weight: 2.5,           // Ketebalan garis
-                                fillColor: '#EF4444',  // Warna isi area
-                                fillOpacity: 0.2       // Transparansi merah pekat
-                            }}
-                        />
-                    )}
-
                     {userLoc && (
                         <Marker position={userLoc} icon={userLocIcon}>
                             <Popup>Lokasi Anda Saat Ini</Popup>

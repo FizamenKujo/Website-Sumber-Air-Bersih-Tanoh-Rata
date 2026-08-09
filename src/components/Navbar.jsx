@@ -13,18 +13,18 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
     return (
         <nav className="bg-[#0284C7] text-white shadow-md sticky top-0 z-50">
-            <div className="w-full mx-auto px-4 lg:px-12 min-h-[4rem] py-3 flex items-center justify-between gap-4">
+            <div className="w-full mx-auto px-4 lg:px-12 min-h-[5rem] py-4 flex items-center justify-between gap-4">
 
-                <div className="flex items-center gap-2 sm:gap-3 cursor-pointer" onClick={() => setActiveTab('beranda')}>
+                <div className="flex items-center gap-3 sm:gap-4 cursor-pointer" onClick={() => setActiveTab('beranda')}>
                     <img
                         src="/logo-aceh-timur.png"
                         alt="Logo Aceh Timur"
-                        className="h-10 md:h-11 w-auto object-contain bg-white rounded-full p-1 shrink-0"
+                        className="h-12 md:h-14 w-auto object-contain bg-white rounded-full p-1.5 shrink-0 shadow-sm"
                     />
-                    <div className="bg-white/20 p-1.5 md:p-2 rounded-full hidden sm:block shrink-0">
-                        <Droplet size={20} className="text-white md:w-6 md:h-6" />
+                    <div className="bg-white/20 p-2 md:p-2.5 rounded-full hidden sm:block shrink-0 shadow-sm">
+                        <Droplet size={24} className="text-white md:w-7 md:h-7" />
                     </div>
-                    <span className="font-bold text-[13px] sm:text-base md:text-lg tracking-tight leading-snug break-words">
+                    <span className="font-bold text-[15.5px] sm:text-lg md:text-xl tracking-tight leading-snug break-words">
                         SIPAIR - Sistem Informasi Air Bersih Gampong Tanoh Rata
                     </span>
                 </div>

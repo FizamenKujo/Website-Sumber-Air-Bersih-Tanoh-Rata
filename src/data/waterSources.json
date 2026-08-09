@@ -4,18 +4,18 @@
         "nama": "Tandon Dusun Meunasah",
         "sumber": "Kemensos Daerah",
         "dusun": "Dusun Meunasah",
-        "lat": 4.8821,
-        "lng": 97.7712,
-        "foto": "https://images.unsplash.com/photo-1541888042459-d8e15db2a5bc?auto=format&fit=crop&q=80&w=600",
+        "lat": 4.812737,
+        "lng": 97.853944,
+        "foto": "/images/tandon-meunasah.jpg",
         "deskripsi": "Fasilitas tandon air dengan sumber sumur bor yang diperuntukkan bagi warga Dusun Meunasah. Titik penyediaan infrastruktur dasar ini dibangun dan difasilitasi oleh program bantuan Kementerian Sosial Daerah.",
         "status": "aktif",
         "labelStatus": "Beroperasi",
         "catatan": "Air jernih dan mengalir lancar.",
-        "kapasitas": "5000 Liter",
+        "kapasitas": "2050 Liter",
         "spesifikasi": {
             "kedalaman": "45 Meter",
-            "debit": "4.5 Liter/Detik",
-            "pompa": "Submersible 2HP"
+            "debit": "~ 1.8 Liter/Detik",
+            "pompa": "Pompa Satelit / Submersible"
         },
         "kualitas": {
             "kejernihan": "Jernih (Sesuai Standar)",
@@ -27,18 +27,18 @@
         "nama": "Tandon Air POLRI Dusun Keumeuning",
         "sumber": "POLRI",
         "dusun": "Dusun Keumeuning",
-        "lat": 4.8835,
-        "lng": 97.7725,
-        "foto": "https://images.unsplash.com/photo-1594916896280-49b809a56e29?auto=format&fit=crop&q=80&w=600",
-        "deskripsi": "Tandon atau tangki penampungan air bersih bantuan langsung dari POLRI. Menggunakan sistem pompa dari sumber sumur bor untuk memenuhi kebutuhan konsumsi harian warga di Dusun Keumeuning.",
+        "lat": 4.813758,
+        "lng": 97.849287,
+        "foto": "/images/tandon-polri.jpg",
+        "deskripsi": "Tandon atau tangki penampungan air bersih bantuan langsung dari POLRI. Memiliki ukuran tandon yang lebih kecil, namun menggunakan sistem pompa dari sumber sumur bor sehingga airnya tetap mengalir tiada henti (tidak pernah habis). Ketahanan air dari fasilitas ini sangat baik, terbukti bukan hanya dimanfaatkan oleh masyarakat Gampong Tanoh Rata, tetapi warga dari desa tetangga pun turut mengambil air di sini.",
         "status": "aktif",
         "labelStatus": "Beroperasi",
-        "catatan": "Beroperasi normal.",
-        "kapasitas": "8000 Liter",
+        "catatan": "Beroperasi normal. Suplai air stabil dan tiada henti.",
+        "kapasitas": "Ukuran Kecil (Aliran Stabil)",
         "spesifikasi": {
             "kedalaman": "18 Meter",
-            "debit": "6 Liter/Detik",
-            "pompa": "Submersible 1.5HP"
+            "debit": "~ 1.2 Liter/Detik (Konstan)",
+            "pompa": "Pompa Satelit / Submersible"
         },
         "kualitas": {
             "kejernihan": "Jernih",
@@ -50,18 +50,18 @@
         "nama": "Tandon Dusun Keumeuning",
         "sumber": "Kemensos Daerah",
         "dusun": "Dusun Keumeuning",
-        "lat": 4.8815,
-        "lng": 97.7750,
-        "foto": "https://images.unsplash.com/photo-1538448173943-41bb3db8ac08?auto=format&fit=crop&q=80&w=600",
+        "lat": 4.816214,
+        "lng": 97.848033,
+        "foto": "/images/tandon-keumeuning.jpg",
         "deskripsi": "Tandon penyedia air komunal bersumber dari sumur bor di wilayah Dusun Keumeuning. Dibangun atas dukungan dan program pemerataan akses air dari Kementerian Sosial Daerah.",
         "status": "aktif",
         "labelStatus": "Beroperasi",
         "catatan": "Distribusi lancar.",
-        "kapasitas": "5000 Liter",
+        "kapasitas": "2050 Liter",
         "spesifikasi": {
             "kedalaman": "45 Meter",
-            "debit": "5 Liter/Detik",
-            "pompa": "Jetpump Submersible"
+            "debit": "~ 1.5 Liter/Detik",
+            "pompa": "Pompa Satelit / Submersible"
         },
         "kualitas": {
             "kejernihan": "Jernih",
@@ -70,21 +70,21 @@
     },
     {
         "id": 4,
-        "nama": "Tandon Dusun Blang Senebok",
+        "nama": "Tandon Dusun Blang Seneubok",
         "sumber": "Kemensos Daerah",
-        "dusun": "Dusun Blang Senebok",
-        "lat": 4.8855,
-        "lng": 97.7705,
-        "foto": "https://images.unsplash.com/photo-1527668752968-14ce70a367c3?auto=format&fit=crop&q=80&w=600",
+        "dusun": "Dusun Blang Seneubok",
+        "lat": 4.810740,
+        "lng": 97.846883,
+        "foto": "/images/tandon-blang-seneubok.jpg",
         "deskripsi": "Tandon air di sisi utara gampong yang dilengkapi dengan sumber sumur bor yang jernih. Dibangun oleh bantuan dari program kerja Kementerian Sosial Daerah.",
         "status": "aktif",
         "labelStatus": "Beroperasi",
         "catatan": "Melayani titik terluar batas gampong.",
-        "kapasitas": "2000 Liter",
+        "kapasitas": "2050 Liter",
         "spesifikasi": {
             "kedalaman": "45 Meter",
-            "debit": "3.5 Liter/Detik",
-            "pompa": "Submersible 1HP"
+            "debit": "~ 1.5 Liter/Detik",
+            "pompa": "Pompa Satelit / Submersible"
         },
         "kualitas": {
             "kejernihan": "Sangat Jernih",

@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, GeoJSON } from 'react-l
 import { Navigation, MapPin } from 'lucide-react';
 import L from 'leaflet';
 import waterSources from '../data/waterSources.json';
-import tanohRataBoundary from '../data/tanohRataBoundary.json';
+import tanohRataBoundary from '../data/batas-tanoh-rata.json';
 
 const polriIcon = L.divIcon({
     className: 'custom-pin',
@@ -60,7 +60,7 @@ export default function WaterMap({ openDetail }) {
         }
     };
 
-    const DEFAULT_CENTER = [4.8828, 97.7718];
+    const DEFAULT_CENTER = [4.8125, 97.8550];
 
     return (
         <div className="max-w-7xl mx-auto p-4 md:py-8 lg:px-8 flex flex-col h-[calc(100vh-64px)] md:h-auto pb-24 md:pb-8">
@@ -93,14 +93,15 @@ export default function WaterMap({ openDetail }) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
+                    {/* Batas Wilayah GeoJSON */}
                     {tanohRataBoundary && (
                         <GeoJSON
                             data={tanohRataBoundary}
                             style={{
-                                color: '#0284C7',
-                                weight: 2,
-                                fillColor: '#0284C7',
-                                fillOpacity: 0.15
+                                color: '#EF4444',      // Warna garis batas (Merah)
+                                weight: 2.5,           // Ketebalan garis
+                                fillColor: '#EF4444',  // Warna isi area
+                                fillOpacity: 0.2       // Transparansi merah pekat
                             }}
                         />
                     )}

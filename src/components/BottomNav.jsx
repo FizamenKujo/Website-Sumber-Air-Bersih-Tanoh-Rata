@@ -7,7 +7,7 @@ export default function BottomNav({ activeTab, setActiveTab }) {
         { id: 'peta', label: 'Peta', icon: Map },
         { id: 'katalog', label: 'Katalog Air', icon: Grid },
         { id: 'edukasi', label: 'Edukasi', icon: BookOpen },
-        { id: 'tentang', label: 'Tentang', icon: Info }
+        { id: 'sejarah', label: 'Sejarah', icon: Info }
     ];
 
     return (

@@ -7,6 +7,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
         { id: 'peta', label: 'Peta GIS' },
         { id: 'katalog', label: 'Katalog Air' },
         { id: 'edukasi', label: 'Edukasi & Info' },
+        { id: 'sejarah', label: 'Sejarah' },
         { id: 'tentang', label: 'Tentang' }
     ];
 

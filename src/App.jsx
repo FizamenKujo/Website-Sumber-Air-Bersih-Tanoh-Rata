@@ -5,8 +5,9 @@ import HeroDashboard from './pages/HeroDashboard';
 import WaterMap from './pages/WaterMap';
 import WaterCatalog from './pages/WaterCatalog';
 import WaterEducation from './pages/WaterEducation';
-import AboutProject from './pages/AboutProject';
 import WaterDetail from './pages/WaterDetail';
+import SejarahVillage from './pages/SejarahVillage';
+import AboutProject from './pages/AboutProject';
 
 export default function App() {
     const [activeTab, setActiveTab] = useState('beranda');
@@ -28,6 +29,7 @@ export default function App() {
                 {activeTab === 'peta' && <WaterMap openDetail={openDetail} />}
                 {activeTab === 'katalog' && <WaterCatalog openDetail={openDetail} />}
                 {activeTab === 'edukasi' && <WaterEducation />}
+                {activeTab === 'sejarah' && <SejarahVillage />}
                 {activeTab === 'tentang' && <AboutProject />}
                 {activeTab === 'detail' && selectedLocation && (
                     <WaterDetail loc={selectedLocation} setActiveTab={setActiveTab} />
@@ -43,7 +45,7 @@ export default function App() {
                     </div>
                     <div className="flex flex-col md:text-right space-y-1">
                         <span className="font-semibold text-slate-700">Kantor Gampong</span>
-                        <span className="text-slate-600">Jl. Kantor Keuchik Gampong Tanoh Rata, Peureulak, Aceh Timur</span>
+                        <span className="text-slate-600">JL. Monisa Km. 05 kode pos 24453</span>
                         <span className="text-[#0284C7]">Email: kantorgampongtanohrata@gmail.com</span>
                     </div>
                 </div>

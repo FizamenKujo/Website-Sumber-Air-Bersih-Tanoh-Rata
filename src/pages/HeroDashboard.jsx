@@ -1,11 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import { Droplet, MapPin, Activity } from 'lucide-react';
 import waterSources from '../data/waterSources.json';
 
 export default function HeroDashboard({ setActiveTab }) {
     const totalSpots = waterSources.length;
     const countPolri = waterSources.filter(s => s.sumber === 'POLRI').length;
-    const countKemensos = waterSources.filter(s => s.sumber === 'Kemensos').length;
+    const countKemensos = waterSources.filter(s => s.sumber === 'Kemensos Daerah').length;
     const countAktif = waterSources.filter(s => s.status === 'aktif').length;
     const countPending = waterSources.filter(s => s.status === 'pending').length;
 
@@ -50,7 +50,7 @@ export default function HeroDashboard({ setActiveTab }) {
             </div>
 
             {/* Grid Stats */}
-            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <div className="bg-white border-t-2 border-[#0284C7] rounded-xl p-6 shadow-sm flex items-start gap-4">
                     <div className="p-3 bg-sky-50 rounded-lg text-[#0284C7]">
@@ -59,16 +59,6 @@ export default function HeroDashboard({ setActiveTab }) {
                     <div>
                         <h3 className="text-2xl font-bold text-slate-800">{totalSpots}</h3>
                         <p className="text-slate-500 text-sm">Total Titik Air Bersih</p>
-                    </div>
-                </div>
-
-                <div className="bg-white border-t-2 border-[#1E3A8A] rounded-xl p-6 shadow-sm flex items-start gap-4">
-                    <div className="p-3 bg-indigo-50 rounded-lg text-[#1E3A8A]">
-                        <MapPin size={24} />
-                    </div>
-                    <div>
-                        <h3 className="text-2xl font-bold text-slate-800">{countPolri} POLRI / {countKemensos} Dinas</h3>
-                        <p className="text-slate-500 text-sm">Sumber Bantuan</p>
                     </div>
                 </div>
 
@@ -84,6 +74,37 @@ export default function HeroDashboard({ setActiveTab }) {
 
             </div>
 
+            {/* Potensi Air Bersih Section */}
+            <div className="w-full max-w-5xl mt-12 mb-8 bg-sky-50/50 border border-sky-100 rounded-3xl p-8 md:p-12 overflow-hidden relative">
+                <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">
+                    <Droplet size={150} />
+                </div>
+
+                <h2 className="text-2xl md:text-3xl font-extrabold text-[#0284C7] mb-6">
+                    POTENSI AIR BERSIH DESA TANOH RATA
+                </h2>
+
+                <div className="space-y-4 text-slate-700 leading-relaxed font-medium">
+                    <p>
+                        Desa Tanoh Rata memiliki potensi sumber air bersih yang sangat melimpah dan berpeluang untuk dikembangkan menjadi sumber ekonomi baru bagi desa. Ketersediaan air yang melimpah tidak hanya dapat memenuhi kebutuhan masyarakat Desa Tanoh Rata, tetapi juga memiliki potensi untuk dikelola secara profesional dan didistribusikan ke daerah lain yang membutuhkan.
+                    </p>
+                    <p>
+                        Dengan pengelolaan yang tepat, pembangunan sarana penampungan, pengolahan, pengemasan, dan distribusi, potensi air bersih Desa Tanoh Rata dapat dikembangkan menjadi produk air bersih yang memiliki nilai ekonomi dan dapat dipasarkan ke wilayah sekitar maupun daerah lainnya.
+                    </p>
+                    <p>
+                        Kami mengajak perusahaan untuk melihat potensi ini sebagai sebuah peluang kerja sama yang memiliki manfaat ekonomi sekaligus manfaat sosial. Perusahaan dapat berperan dalam pengembangan fasilitas dan sistem distribusi, sementara Desa Tanoh Rata memiliki potensi sumber air yang dapat dikembangkan secara berkelanjutan.
+                    </p>
+                    <p>
+                        Kerja sama ini diharapkan dapat menciptakan lapangan pekerjaan bagi masyarakat, meningkatkan pendapatan desa, membuka peluang usaha baru, serta menyediakan air bersih bagi daerah lain yang membutuhkan.
+                    </p>
+
+                    <div className="mt-6 p-5 bg-white border-l-4 border-[#0284C7] rounded-r-xl shadow-sm italic text-[#0284C7] font-semibold">
+                        "Desa Tanoh Rata memiliki sumber daya air yang melimpah. Dengan dukungan dan investasi yang tepat, potensi tersebut dapat dikembangkan menjadi sumber kesejahteraan masyarakat dan peluang usaha yang berkelanjutan. Mari bersama-sama mengubah potensi air bersih Desa Tanoh Rata menjadi manfaat yang lebih luas—untuk masyarakat, desa, dan daerah di sekitarnya."
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }
+
